@@ -1,0 +1,8 @@
+main> a::before{
+    content:"";
+    background: url("../images/dikke_zeehond.jpg") no-repeat;
+    width: 255px;
+    height: 255px;
+    float: left;
+    margin-right: 5px;
+}
