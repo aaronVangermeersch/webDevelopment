@@ -1,0 +1,12 @@
+
+.rij>div {
+    background-color: dimgrey;
+    min-height: 150px;
+    min-width: 150px;
+    background-clip: content-box;
+}
+
+.rij>div:nth-child(odd) {
+    background-color: darkgrey;
+
+}
