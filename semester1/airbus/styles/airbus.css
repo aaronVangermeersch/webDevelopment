@@ -1,0 +1,133 @@
+html{
+    width:95%;
+    margin: auto;
+    text-align: center;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top{
+    background-position: center;
+    background-image: url('../images/bgsky3.jpg');
+    background-size: cover;
+    height: 200px;
+    color: darkblue;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.vliegtuig{
+    top: 60px;
+    right: 250px;
+    z-index: 1;
+    position: absolute;
+
+}
+
+.airbus{
+    font-size: 300%;
+    font-style: italic;
+    margin: 0;
+    z-index: 2;
+}
+
+.text{
+    font-size:240%;
+    margin: 35px;
+}
+
+.news{
+    width: 25%;
+    border: 1px #999999 solid;
+    background-color: #dddddd;
+    float: right;
+    margin-left: 10px;
+
+
+}
+
+.news h3{
+    color: white;
+    background-color: blue;
+    font-size: 120%
+}
+
+.news p{
+    color: #666666;
+    font-size: 90%;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.main{
+    width: 75%;
+    display: block;
+}
+
+.introduction{
+    display: flex;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.introduction p{
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+
+}
+
+.logo{
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.gallery{
+    display: grid;
+    background-color: #999999;
+    justify-content: space-between;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.foto{
+    height: 180px;
+    width: 180px;
+    border: 1px dotted white;
+    display: inline-block;
+    margin: 20px;
+}
+
+.foto img{
+    border: 10px solid white;
+    box-sizing: border-box;
+}
+
+.bottom{
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+}
+
+.bottom div{
+    display: inline-block;
+    margin-left: 120px;
+}
+
+.bottom a:hover{
+    color: red;
+}
+
+footer{
+    background-color: white;
+    color: black;
+}
