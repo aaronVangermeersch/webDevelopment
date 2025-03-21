@@ -24,7 +24,7 @@
         redSlider.addEventListener("input", updateColor);
         greenSlider.addEventListener("input", updateColor);
         blueSlider.addEventListener("input", updateColor);
-        // fixes issue were color is wrong after reload
+
         updateColor();
     };
 
