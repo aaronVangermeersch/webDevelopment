@@ -33,29 +33,29 @@ const setup = () => {
         const blue = blueSlider.value;
         const color = `rgb(${red}, ${green}, ${blue})`;
 
-        // Maak een nieuwe swatch
+
         const swatch = document.createElement("div");
         swatch.className = "swatch";
         swatch.style.backgroundColor = color;
 
-        // Voeg een delete knop toe
+
         const deleteButton = document.createElement("button");
         deleteButton.className = "delete-button";
         deleteButton.textContent = "×";
         deleteButton.addEventListener("click", (e) => {
-            e.stopPropagation(); // Voorkom dat de swatch klik wordt geactiveerd
-            swatch.remove(); // Verwijder de swatch
+            e.stopPropagation();
+            swatch.remove();
         });
 
-        // Voeg een klik-event toe aan de swatch
+
         swatch.addEventListener("click", () => {
             redSlider.value = red;
             greenSlider.value = green;
             blueSlider.value = blue;
-            updateColor(); // Update de colorbox met de gesavede kleur
+            updateColor();
         });
 
-        // Voeg de delete knop en swatch toe aan de DOM
+
         swatch.appendChild(deleteButton);
         savedSwatches.appendChild(swatch);
     });
