@@ -1,0 +1,6 @@
+#playfield{
+    height: 80vh
+}
+#target {
+    position: absolute;
+}
